@@ -1,0 +1,9 @@
+h1 {font-family: poppins;}
+
+table, th, td {
+    font-family: poppins;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-left: 10px;
+    padding-right: 10px;
+}
