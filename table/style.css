@@ -1,4 +1,11 @@
-h1 {font-family: poppins;}
+body {
+    background-color:#dfdfdf
+}
+
+h1, p {
+    font-family: poppins;
+    color: #005f76;
+}
 
 table, th, td {
     font-family: poppins;
@@ -6,4 +13,7 @@ table, th, td {
     border-collapse: collapse;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: white;
 }
+
+/* TODO: Navbar Samping (styling ada di navbar/navbar.css) */
