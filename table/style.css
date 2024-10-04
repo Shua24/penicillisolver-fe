@@ -2,11 +2,6 @@ body {
     background-color:#dfdfdf
 }
 
-h1, p {
-    font-family: poppins;
-    color: #005f76;
-}
-
 table, th, td {
     font-family: poppins;
     border: 1px solid black;
