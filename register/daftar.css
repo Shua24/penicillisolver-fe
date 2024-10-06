@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* 
+.container {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+*/
+
+.container {
+    display: flex;
+    width: 900px; /* Sesuaikan lebar agar tidak terlalu besar */
+    height: auto; /* Otomatis menyesuaikan ketinggian */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Menjaga layout tetap rapi */
+}
+
+.left {
+    flex: 1;
+    background-color: #eaf3f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.left img {
+    width: 450px;
+    height: 600px;
+    padding:10px;
+}*/
+
+
+/* ini untuk gambar dokter */
+.left img {
+    width: 450px; /* Pastikan gambar tidak lebih besar dari kontainer */
+/*max-width: 790px; */ /* Batasi lebar maksimal gambar */ 
+/*height: auto; */
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/*
+.right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.right {
+    flex: 1;
+    padding: 30px; /* Kurangi padding untuk menghemat ruang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container {
+    width: 100%;
+}
+
+/*
+.form-container img {
+    width : 300px;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.form-container img {
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px auto; /* Rapi di tengah */
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+/*margin-bottom: 20px; /* Kurangi margin untuk hemat ruang */ 
+    width: 100%;
+    padding: 10px;                          
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.role-selection button {
+/*margin-right: 10px; */
+    padding: 8px 16px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: #eaf3f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.role-selection button:hover {
+    background-color: #ddd;
+}
+
+.submit-btn {
+    background-color: #00a99d;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #008c80;
+}
