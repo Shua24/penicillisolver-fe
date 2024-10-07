@@ -22,12 +22,10 @@ body {
     overflow: hidden; /* Menjaga layout tetap rapi */
 }
 
-.role-selection button[type=button]:active {
+.role-selection button[type=button]:focus {
     background-color: #00a99d;
     color: white;
 }
-
-
 
 .left {
     flex: 1;
@@ -37,7 +35,6 @@ body {
     align-items: center;
 }
 
-/* ini untuk gambar dokter */
 .left img {
     width: 450px; /* Pastikan gambar tidak lebih besar dari kontainer */
 /*max-width: 790px; */ /* Batasi lebar maksimal gambar */ 
@@ -80,6 +77,10 @@ label {
     display: block;
     margin-bottom: 8px;
     color: #333;
+}
+
+label[for=nama] {
+    padding-top: 30px;
 }
 
 input {

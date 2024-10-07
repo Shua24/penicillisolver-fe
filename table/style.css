@@ -11,4 +11,11 @@ table, th, td {
     background-color: white;
 }
 
+.center {
+    position: absolute;
+    left: 0px;
+    float: left;
+    padding: 50px;
+}
+
 /* TODO: Navbar Samping (styling ada di navbar/navbar.css) */

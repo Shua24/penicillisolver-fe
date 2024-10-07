@@ -3,4 +3,19 @@ h1, p {
     color: #005f76;
 }
 
-/* TODO: Styling button */
+button[type=button] {
+    font-family: Poppins;
+    border-radius: 5px;
+    background-color: white;
+    color: #00a99d;
+    position: relative;
+    margin-bottom: 30em;
+    margin-left: 40px;
+    bottom: 0;
+    font-size: 20px;
+}
+
+button[type=button]:active {
+    background-color: #00a99d;
+    color: white;
+}
