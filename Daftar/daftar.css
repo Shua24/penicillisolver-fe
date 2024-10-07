@@ -13,16 +13,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/* 
-.container {
-    display: flex;
-    width: 1000px;
-    height: 600px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-*/
-
 .container {
     display: flex;
     width: 900px; /* Sesuaikan lebar agar tidak terlalu besar */
@@ -32,6 +22,13 @@ body {
     overflow: hidden; /* Menjaga layout tetap rapi */
 }
 
+.role-selection button[type=button]:active {
+    background-color: #00a99d;
+    color: white;
+}
+
+
+
 .left {
     flex: 1;
     background-color: #eaf3f8;
@@ -39,13 +36,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-/*
-.left img {
-    width: 450px;
-    height: 600px;
-    padding:10px;
-}*/
-
 
 /* ini untuk gambar dokter */
 .left img {
@@ -56,16 +46,6 @@ body {
     object-fit: cover;
 }
 
-
-/*
-.right {
-    flex: 1;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
-
 .right {
     flex: 1;
     padding: 30px; /* Kurangi padding untuk menghemat ruang */
@@ -74,26 +54,15 @@ body {
     align-items: center;
 }
 
-
 .form-container {
     width: 100%;
 }
-
-/*
-.form-container img {
-    width : 300px;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 .form-container img {
     width: 200px;
     display: block;
     margin: 0 auto 20px auto; /* Rapi di tengah */
 }
-
 
 h2 {
     font-size: 24px;
@@ -114,7 +83,6 @@ label {
 }
 
 input {
-/*margin-bottom: 20px; /* Kurangi margin untuk hemat ruang */ 
     width: 100%;
     padding: 10px;                          
     margin-bottom: 15px;
@@ -123,7 +91,6 @@ input {
 }
 
 .role-selection button {
-/*margin-right: 10px; */
     padding: 8px 16px;
     margin-right: 5px;
     margin-bottom: 10px;
