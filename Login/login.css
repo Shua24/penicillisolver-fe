@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     font-family: Poppins;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -11,21 +12,28 @@ body, html {
 }
 
 .background {
-    display: flex;
+    flex: 0 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .background img {
-    width: 750px;
-    height: auto;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .form {
-    flex: 1;
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 100%;
     padding: 50px;
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    transition: transform 0.3s;
 }
 
 .logo img {
@@ -70,6 +78,11 @@ input {
     padding-left: 5px;
 }
 
+input::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
 .role-selection {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +116,7 @@ input {
     margin-top: 20px;
 }
 
-button[type="submit"]:(.lupa) {
+button[type="submit"], .lupa {
     text-align: center;
 }
 
@@ -118,9 +131,8 @@ button[type="submit"]:not(.login) {
     font-size: 12px;
 }
 
-.login:hover{
+.login:hover {
     background-color: rgb(255, 255, 255);
-    color:#008080;
+    color: #008080;
     border: 1px solid #008080;
-
 }

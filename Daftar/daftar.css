@@ -16,12 +16,8 @@ body {
 .container {
     display: flex;
     width: 900px;
-    height: auto; 
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    height: 100vh;
     position: relative;
-    z-index: 1;
 }
 
 .role-selection button[type=button]:focus {
@@ -33,30 +29,28 @@ body {
     flex: 1;
     background-color: #eaf3f8;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     height: 100vh;
     position: relative;
-    z-index: 0;
 }
 
 .left img {
     width: 450px; 
     height: 100vh;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
 .right {
-    flex: 1;
-    padding: 30px;
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    padding: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 1;
 }
@@ -68,7 +62,7 @@ body {
 .form-container img {
     width: 200px;
     display: block;
-    margin: 0 auto 20px auto; /* Rapi di tengah */
+    margin: 0 auto 20px auto;
 }
 
 h2 {
@@ -105,14 +99,17 @@ input {
     padding: 8px 16px;
     margin-right: 5px;
     margin-bottom: 10px;
-    background-color: #eaf3f8;
-    border: 1px solid #ccc;
+    background-color: transparent;
+    border: 1px solid #008080;
+    color: #008080;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.role-selection button:hover {
-    background-color: #ddd;
+.role-selection button:hover, 
+.role-selection button:focus {
+    background-color: #00a99d;
+    color: white;
 }
 
 .submit-btn {
@@ -127,48 +124,4 @@ input {
 
 .submit-btn:hover {
     background-color: #008c80;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%; /* Full width on smaller screens */
-        height: auto;
-    }
-
-    .left {
-        height: 300px; /* Adjust height for smaller screens */
-    }
-
-    .right {
-        width: 100%;
-        padding: 20px;
-        position: relative;
-    }
-
-    .form-container {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .left {
-        display: none; /* Hide image for smaller screens */
-    }
-
-    .right {
-        padding: 10px;
-    }
-
-    .form-container img {
-        width: 150px;
-    }
-
-    .submit-btn {
-        padding: 8px;
-    }
 }
