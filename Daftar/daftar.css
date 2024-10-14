@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 100vh;
+    position: relative;
+}
+
+.role-selection button[type=button]:focus {
+    background-color: #00a99d;
+    color: white;
+}
+
+.left {
+    flex: 1;
+    background-color: #eaf3f8;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    position: relative;
+}
+
+.left img {
+    width: 450px; 
+    height: 100vh;
+    object-fit: cover;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-container img {
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+label[for=nama] {
+    padding-top: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;                          
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.role-selection button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid #008080;
+    color: #008080;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.role-selection button:hover, 
+.role-selection button:focus {
+    background-color: #00a99d;
+    color: white;
+}
+
+.submit-btn {
+    background-color: #00a99d;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #008c80;
+}
