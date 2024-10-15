@@ -2,30 +2,41 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Poppins;
-    height: auto;
-
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
     display: flex;
     height: 100vh;
 }
+
 .background {
     flex: 0 0 auto;
     position: relative;
+    overflow: hidden;
 }
+
 .background img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    margin-bottom: -100px;
 }
+
+a {text-decoration: none;}
+
 .form {
-    width: auto;
-    height: auto;
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 100%;
     padding: 50px;
+    display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    transition: transform 0.3s;
+    overflow-y: auto;
 }
 
 .logo img {
@@ -34,12 +45,11 @@ body, html {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -20px;
 }
 
 .selamat h1 {
     color: #000000;
-    margin-bottom: -10px;
+    margin-bottom: 5px;
     text-align: center;
     font-size: 20px;
 }
@@ -47,7 +57,7 @@ body, html {
 .selamat h3 {
     color: #666;
     font-weight: normal;
-    margin-bottom: 10;
+    margin-top: 0;
     text-align: center;
     font-size: 15px;
 }
@@ -68,7 +78,8 @@ input {
     padding: 10px 0;
     margin-bottom: 5px;
     border-radius: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
 }
 
 input::placeholder {
@@ -81,7 +92,7 @@ input::placeholder {
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 20px;
-    padding-top: 20px
+    padding-top: 20px;
 }
 
 .role-selection button {
@@ -100,10 +111,11 @@ input::placeholder {
     color: white;
 }
 
-.pilih{
+.pilih {
     text-align: center;
     margin-top: 10px;
 }
+
 .daftar {
     background-color: #008080;
     color: white;
@@ -114,11 +126,13 @@ input::placeholder {
     margin-top: 20px;
     width: 100%;
 }
-.login{
+
+.login {
     margin-top: 10px;
     text-align: center;
     font-size: small;
 }
+
 button[type="submit"]:not(.daftar) {
     color: #00B4D8;
     text-align: right;
@@ -132,19 +146,13 @@ button[type="submit"]:not(.daftar) {
     color: #008080;
     border: 1px solid #008080;
 }
-.login{
-    text-align: center;
-    font-size: small;
-    display: flex;
-    margin-left: 115px;
-    margin-top: 25px;
-}
 
 .lanjutkan {
     text-align: center;
     font-size: small;
 }
-.lanjutkan img{
+
+.lanjutkan img {
     width: 40px;
     height: 40px;
     padding: 10px;

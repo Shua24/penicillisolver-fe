@@ -9,7 +9,6 @@ body {
     max-width: 3000px;
     margin: 0 auto;
     padding: 10px;
-    overflow: hidden;
 }
 
 .header {
@@ -37,19 +36,22 @@ body {
     cursor: pointer;
 }
 
+.button p:hover {
+    background-color: #006666;
+    transform: scale(1.05);
+}
+
 .main-content {
     display: flex;
     justify-content: space-between;
-    align-items: auto;
+    align-items: flex-start;
     background-color: #008080;
     color: white;
     padding: 20px;
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
     min-height: 70vh;
-
+    box-sizing: border-box;
+    position: relative;
 }
 
 .text-content {
@@ -59,11 +61,9 @@ body {
 
 .tagline {
     font-family: Krona One;
-    display: flex;
     font-size: 35px;
     font-weight: bold;
-    margin-bottom: 50px;
-    padding-left: 10%;
+    margin: 0 0 50px 10%;
     padding-top: 5%;
 }
 
@@ -80,9 +80,9 @@ body {
     width: 50%;
     height: 100%;
     overflow: hidden;
-  }
+}
 
-  .image-content img {
+.image-content img {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -90,9 +90,4 @@ body {
     height: auto;
     object-fit: cover;
     object-position: center 30%;
-  }
-
-.button p:hover {
-    background-color: #006666;
-    transform: scale(1.05);
 }
