@@ -13,7 +13,9 @@
         </div>
         <div class="form">
             <div class="logo">
+                <a href="../Landing/landing.html">
                  <img src="../Assets/logo.png" alt="logo">
+                </a>
             </div>
             <div class="form-container">
                 <div class="selamat"> 
@@ -21,24 +23,35 @@
                     <h3>Silakan Login</h3>
                 </div>
                 <form action="../Beranda/beranda.html" method="POST">
-                    <label>Masuk sebagai:</label>
-                    <br>
-                        <div class="role-selection">
-                            <button type="button">Tim Mikrobiologi</button>
-                            <button type="button">Dokter Lain</button>
-                            <button type="button">Tim PPI</button>
-                            <button type="button">Tim PPRA</button>
-                            <button type="button">Penanggung jawab Lab</button>
-                        </div>
                     <label for="email"> Email </label>
                     <input type="email" id="email" name="email" required>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>          
+                    <input type="password" id="password" name="password" required>    
                     <button type="submit" class="login">Login</button>
-                </form>
-                <a href="../Login/login.html">
-                    <p>Lupa Password ?</p>
-                </a>
+                    <div class="lupa">
+                        <a href="../Login/login.html" style="text-decoration: none;">
+                            <p>Lupa Password ?</p>
+                        </a>
+                    </div>     
+                    <div class="daftar">
+                        Belum Punya Akun ?
+                        <a href="../Daftar/daftar.html" style="text-decoration: none;">
+                            Daftar
+                        </a>
+                    </div>    
+                </form>  
+                <div class="lanjutkan">
+                    <p>Atau lanjutkan dengan :</p>
+                    <a href="http://www.google.com">
+                        <img src="../Assets/google.png">
+                    </a>
+                    <a href="http://www.facebook.com">
+                        <img src="../Assets/fb.png">
+                    </a>
+                    <a href="https://x.com/?lang=en">
+                        <img src="../Assets/x.png">
+                    </a>
+                </div>
             </div>
         </div>
     </div>

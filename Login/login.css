@@ -62,6 +62,7 @@ body, html {
 form {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 label {
@@ -75,35 +76,13 @@ input {
     padding: 10px 0;
     margin-bottom: 5px;
     border-radius: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
 }
 
 input::placeholder {
     color: #888;
     opacity: 1;
-}
-
-.role-selection {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.role-selection button {
-    background-color: transparent;
-    border: 1px solid #008080;
-    color: #008080;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.role-selection button:hover,
-.role-selection button:focus {
-    background-color: #008080;
-    color: white;
 }
 
 .login {
@@ -113,26 +92,43 @@ input::placeholder {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+.lupa{
+    margin-top: 10px;
+    text-align: center;
+    font-size: small;
 }
 
-button[type="submit"], .lupa {
-    text-align: center;
-}
 
 button[type="submit"]:not(.login) {
-    background: none;
-    border: none;
     color: #00B4D8;
     text-align: right;
     cursor: pointer;
     padding: 0;
     margin-left: auto;
-    font-size: 12px;
 }
 
 .login:hover {
-    background-color: rgb(255, 255, 255);
-    color: #008080;
+    color: #ffffff;
     border: 1px solid #008080;
+    transform: scale(1.05);
+}
+
+.daftar{
+    text-align: center;
+    font-size: small;
+    display: flex;
+    margin-left: 115px;
+    margin-top: 10px;
+}
+
+.lanjutkan {
+    text-align: center;
+    font-size: small;
+}
+.lanjutkan img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
 }

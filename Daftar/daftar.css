@@ -1,127 +1,151 @@
-* {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Poppins;
-}
+    height: auto;
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
 }
 
 .container {
     display: flex;
-    width: 900px;
     height: 100vh;
+}
+.background {
+    flex: 0 0 auto;
     position: relative;
 }
-
-.role-selection button[type=button]:focus {
-    background-color: #00a99d;
-    color: white;
-}
-
-.left {
-    flex: 1;
-    background-color: #eaf3f8;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    height: 100vh;
-    position: relative;
-}
-
-.left img {
-    width: 450px; 
-    height: 100vh;
+.background img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
+    margin-bottom: -100px;
+}
+.form {
+    width: auto;
+    height: auto;
+    padding: 50px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-.right {
-    position: absolute;
-    right: 0;
-    width: 500px;
-    height: 100%;
-    padding: 50px;
+.logo img {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+}
+
+.selamat h1 {
+    color: #000000;
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.selamat h3 {
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 10;
+    text-align: center;
+    font-size: 15px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-}
-
-.form-container {
-    width: 100%;
-}
-
-.form-container img {
-    width: 200px;
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-label[for=nama] {
-    padding-top: 30px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    color: #008080;
 }
 
 input {
-    width: 100%;
-    padding: 10px;                          
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #008080;
+    padding: 10px 0;
+    margin-bottom: 5px;
     border-radius: 5px;
+    padding-left: 5px;
+}
+
+input::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+.role-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-top: 20px
 }
 
 .role-selection button {
-    padding: 8px 16px;
-    margin-right: 5px;
-    margin-bottom: 10px;
     background-color: transparent;
     border: 1px solid #008080;
     color: #008080;
+    padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 12px;
 }
 
-.role-selection button:hover, 
+.role-selection button:hover,
 .role-selection button:focus {
-    background-color: #00a99d;
+    background-color: #008080;
     color: white;
 }
 
-.submit-btn {
-    background-color: #00a99d;
+.pilih{
+    text-align: center;
+    margin-top: 10px;
+}
+.daftar {
+    background-color: #008080;
     color: white;
+    border: 3px #008080;
     padding: 10px;
-    border: none;
-    width: 100%;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+.login{
+    margin-top: 10px;
+    text-align: center;
+    font-size: small;
+}
+button[type="submit"]:not(.daftar) {
+    color: #00B4D8;
+    text-align: right;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
 }
 
-.submit-btn:hover {
-    background-color: #008c80;
+.daftar:hover {
+    background-color: #ffffff;
+    color: #008080;
+    border: 1px solid #008080;
+}
+.login{
+    text-align: center;
+    font-size: small;
+    display: flex;
+    margin-left: 115px;
+    margin-top: 25px;
+}
+
+.lanjutkan {
+    text-align: center;
+    font-size: small;
+}
+.lanjutkan img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
 }
