@@ -85,7 +85,7 @@ input::placeholder {
 .login {
     background-color: #008080;
     color: white;
-    border: 3px solid #008080;
+    border: 3px #008080;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -93,7 +93,7 @@ input::placeholder {
 }
 
 .lupa {
-    margin-top: 10px;
+    margin-top: 50px;
     text-align: center;
     font-size: small;
 }
@@ -109,7 +109,7 @@ button[type="submit"]:not(.login) {
 .login:hover {
     background-color: #ffffff;
     color: #008080;
-    border: 1px solid #008080;
+    box-shadow: 0 0 0 1px #008080;
 }
 
 .daftar {

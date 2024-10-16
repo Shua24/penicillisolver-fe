@@ -27,16 +27,18 @@ body {
     gap: 20px;
 }
 
-.button p {
+.button a {
     margin: 0;
     padding: 10px 20px;
     background-color: #008080;
     color: white;
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
+    font-family: Poppins, sans-serif;
 }
 
-.button p:hover {
+.button a:hover {
     background-color: #006666;
     transform: scale(1.05);
 }
