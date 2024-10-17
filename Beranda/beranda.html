@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda</title>
-    <link rel="stylesheet" href="/navbar/navbar.css">
+    <link rel="stylesheet" href="../Beranda/beranda.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
 </head>
 <body>
-    <div class="container">
-
-    </div>
+    <div class="container"></div>
     <div class="sidebar">
-        <a href="../Landing/landing.html">
-            <img src="../Assets/lambang.png" alt="Lambang Penicillisolver" class="lambang">
-        </a>
-        <div class="menu-item">Beranda</div>
-        <div class="menu-item">Tentang Pola Kuman</div>
+        <img src="../Assets/lambang.png" alt="Lambang Penicillisolver" class="lambang">
+        <div class="menu-item active" onclick="window.location.href='../Beranda/beranda.html'">Beranda</div>
+        <div class="menu-item" onclick="window.location.href='../tentangPolaKuman/tentangPolaKuman.html'">Tentang Pola Kuman</div>
+        <div class="menu-item" onclick="window.location.href='../cariAntibiotik/cariAntibiotik.html'">Cari Antibiotik</div>
         <div class="user-info">
             <div class="user-avatar"></div>
                 <div>Rizky Septian</div>
                 <div>• PPI</div>
         </div>
-        <div class="logout-box">Log out</div>
+        <div class="logout-box" onclick="window.location.href='../Landing/landing.html'">Log out</div>
     </div>
-    
+    <div class="main-content">
+        <h1>Ini Beranda</h1>
+        <a href="../Tabel/table.html">
+            <img src="../Assets/pola.png" alt="Pola" style="cursor: pointer;">
+        </a>
+    </div>
 </body>
 </html>

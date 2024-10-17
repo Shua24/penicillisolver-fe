@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="daftar.css">
+    <title>Daftar</title>
+    <link rel="stylesheet" href="../Daftar/daftar.css">
 </head>
 <body>
     <div class="container">
@@ -22,7 +22,7 @@
                     <h1>Selamat Datang</h1>
                     <h3>Silakan Daftar</h3>
                 </div>
-                <form action="../Login/login.html" method="POST">
+                <form action="../Login/login.html" method="GET">
                     <label for="nama">Nama Lengkap</label>
                     <input type="text" id="nama" name="nama" required>
                     <label for="email">Email</label>
@@ -37,12 +37,12 @@
                         <label>Daftar sebagai:</label>
                     </div> 
                     <div class="role-selection">
-                        <button>Tim Mikrobiologi</button>
-                        <button>Dokter lain</button>
-                        <button>Tim PPI</button>
-                        <button>Tim PPRA</button>
-                        <button>Penanggung Jawab Lab</button>
-                    </div>
+                        <button type="button">Tim Mikrobiologi</button>
+                        <button type="button">Dokter lain</button>
+                        <button type="button">Tim PPI</button>
+                        <button type="button">Tim PPRA</button>
+                        <button type="button">Penanggung Jawab Lab</button>
+                    </div>                    
                     <button type="submit" class="daftar">Daftar</button>
                 </form>  
                 <div class="login">

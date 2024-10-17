@@ -12,15 +12,15 @@ table, th, td {
 }
 
 .center {
-    position: absolute;
-    left: 0px;
-    float: left;
-    padding: 50px;
+    margin-left: 270px;
+    padding: 30px;
 }
 
 h1, p {
     font-family: poppins;
     color: #005f76;
+    margin-left: 300px;
+    padding-top: 50px;
 }
 
 button[type=button] {
@@ -28,9 +28,8 @@ button[type=button] {
     border-radius: 5px;
     background-color: white;
     color: #00a99d;
-    position: relative;
-    margin-bottom: 30em;
-    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-left: 300px;
     bottom: 0;
     font-size: 20px;
 }
@@ -39,5 +38,3 @@ button[type=button]:active {
     background-color: #00a99d;
     color: white;
 }
-
-/* TODO: Navbar Samping (styling ada di navbar/navbar.css) */

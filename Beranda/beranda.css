@@ -1,0 +1,23 @@
+body {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.menu-item.active {
+    color: #ffffff;
+    background-color: #008080;
+}
+
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+h1 {
+    color: #005F76;
+    text-align: left;
+    margin: 50px 0;
+    font-size: 38px;
+}

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tentangPolaKuman</title>
-    <link rel="stylesheet" href="/navbar/navbar.css">
+    <title>Tentang Pola Kuman</title>
+    <link rel="stylesheet" href="../tentangPolaKuman/tentangPolaKuman.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
 </head>
 <body>
     <div class="container">
@@ -12,8 +13,9 @@
     </div>
     <div class="sidebar">
         <img src="../Assets/lambang.png" alt="Lambang Penicillisolver" class="lambang">
-        <div class="menu-item">Beranda</div>
-        <div class="menu-item">Tentang Pola Kuman</div>
+        <div class="menu-item" onclick="window.location.href='../Beranda/beranda.html'">Beranda</div>
+        <div class="menu-item active" onclick="window.location.href='../tentangPolaKuman/tentangPolaKuman.html'">Tentang Pola Kuman</div>
+        <div class="menu-item" onclick="window.location.href='../cariAntibiotik/cariAntibiotik.html'">Cari Antibiotik</div>
         <div class="user-info">
             <div class="user-avatar"></div>
                 <div>Rizky Septian</div>
@@ -21,6 +23,18 @@
         </div>
         <div class="logout-box">Log out</div>
     </div>
-    
+    <div class="main-content">
+        <h1>Tentang Pola Kuman</h1>
+        <h2>Apa itu pola kuman?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et malesuada mauris. Vivamus ac ligula eget tortor gravida ultrices. Donec id laoreet leo. Cras ac massa molestie, posuere metus at, commodo magna.</p>
+        <h2>Bagaimana cara membaca pola kuman?</h2>
+        <p>Cara membaca pola kuman sebagai berikut:</p>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Curabitur tristique hendrerit leo faucibus mattis.</li>
+            <li>Nullam nec lacus est. Nullam id facilisis sapien, hendrerit ullamcorper velit.</li>
+            <li>Sed congue lobortis dolor eget commodo.</li>
+        </ol>
+    </div>
 </body>
 </html>
