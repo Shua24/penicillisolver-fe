@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupa Kata Sandi</title>
+    <link rel="stylesheet" href="lupa.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="LupaSandi">
+                <h1>Lupa Kata Sandi ?</h1>
+            </div>
+            <div class="logo">
+                    <img src="../Assets/lupa2.gif" alt="logo">
+            </div>
+            <div class="form-container">
+                <div class="Masukkan">
+                    <h3>Masukkan Email Anda</h3>
+                </div>
+                <form action="../Verifikasi/verifikasi.html" method="POST">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="off" required>
+                </form>
+                <form action="../Verifikasi/verifikasi.html">
+                    <button type="submit" class="tombolverifikasi">Verifikasi</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

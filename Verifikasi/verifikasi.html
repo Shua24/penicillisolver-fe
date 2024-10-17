@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi</title>
+    <link rel="stylesheet" href="verifikasi.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="verifikasi">
+                <h1>Verifikasi</h1>
+            </div>
+            <div class="logo">
+                <img src="../Assets/notif.gif" alt="logo">
+            </div>
+            <div class="pesan">
+                <h3>Masukkan Kode OTP</h3>
+            </div>
+            <div class="isi">
+                <input type="text" maxlength="1" class="code-input" id="code1" autocomplete="off">
+                <input type="text" maxlength="1" class="code-input" id="code2" autocomplete="off">
+                <input type="text" maxlength="1" class="code-input" id="code3" autocomplete="off">
+                <input type="text" maxlength="1" class="code-input" id="code4" autocomplete="off">
+            </div>
+            <button type="button" class="tombol" onclick="verifikasi()">Verifikasi</button>
+            <p id="pesan" class="peringatan"></p>
+        </div>
+    </div>
+    <script src="verifikasi.js"></script>
+</body>
+</html>
