@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../cariAntibiotik/cariAntibiotik.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
     <title>Cari Antibiotik</title>
 </head>
 <body>
-    <h1>Cari antibiotik</h1>
+    <div class="container">
+
+    </div>
+    <div class="sidebar">
+        <img src="../Assets/lambang.png" alt="Lambang Penicillisolver" class="lambang">
+        <div class="menu-item">Beranda</div>
+        <div class="menu-item">Tentang Pola Kuman</div>
+        <div class="user-info">
+            <div class="user-avatar"></div>
+                <div>Rizky Septian</div>
+                <div>• PPI</div>
+        </div>
+        <div class="logout-box">Log out</div>
+    </div>
     <div class="center">
+        <h1>Cari antibiotik</h1>
+        <div id id="navbar"></div>
         <form action="#">
             <label for="bacteria">Bakteri:</label>
             <input type="text" name="bacteria" id="bacteria" placeholder="Masukkan spesies bakteri"><br><br><br><br><br>
-            <input type="submit" name="submitbact" id="submitbact" value="Cari">
+            <button type="submit">Cari</button>
         </form>
+
     </div>
 </body>
 </html>

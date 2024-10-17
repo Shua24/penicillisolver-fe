@@ -32,10 +32,8 @@ table, th, td {
 }
 
 .center {
-    position: absolute;
-    left: 0px;
-    float: left;
-    padding: 50px;
+    margin-left: 250px;
+    padding: 20px;
 }
 
 h1, p, label {
@@ -47,4 +45,22 @@ h1, p, label {
 
 h1 {
     font-size: 40px;
+}
+
+input[type=text] {
+    padding: 15px;
+    width: 200px;
+}
+
+button {
+    font-family: poppins;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: #005f76;
+}
+
+button:hover {
+    background-color: #005f76;
+    color: white;
 }
