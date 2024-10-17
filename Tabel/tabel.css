@@ -22,19 +22,3 @@ h1, p {
     margin-left: 300px;
     padding-top: 50px;
 }
-
-button[type=button] {
-    font-family: Poppins;
-    border-radius: 5px;
-    background-color: white;
-    color: #00a99d;
-    margin-bottom: 30px;
-    margin-left: 300px;
-    bottom: 0;
-    font-size: 20px;
-}
-
-button[type=button]:active {
-    background-color: #00a99d;
-    color: white;
-}
