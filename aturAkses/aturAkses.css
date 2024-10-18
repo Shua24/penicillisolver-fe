@@ -17,6 +17,12 @@ body {
     margin-bottom: 10px;
 }
 
+.menu-item.active:hover,
+.menu-item.active {
+    color: #ffffff;
+    background-color: #008080;
+}
+
 .user-box img {
     width: 40px;
     height: 40px;

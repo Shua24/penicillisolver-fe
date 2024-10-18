@@ -6,6 +6,7 @@ body, html {
     overflow: hidden;
 }
 
+.menu-item.active:hover,
 .menu-item.active {
     color: #ffffff;
     background-color: #008080;
