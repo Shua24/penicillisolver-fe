@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atur Akses</title>
+    <title>Atur Izin PPI</title>
     <link rel="stylesheet" href="../aturAkses/aturAkses.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
 </head>
@@ -16,30 +16,23 @@
         <div class="menu-item" onclick="window.location.href='../cariAntibiotik/cariAntibiotik.html'">Cari Antibiotik</div>
         <div class="menu-item active" onclick="window.location.href='../aturAkses/aturAkses.html'">Atur Akses</div>
         <div class="user-info">
-                <div id="nama">Rizky Septian</div>
-                <div id="role">• Tim Mikrobiologi</div>
+            <div class="user-avatar"></div>
+                <div>Rizky Septian</div>
+                <div>• PPI</div>
         </div>
         <div class="logout-box" onclick="window.location.href='../Landing/landing.html'">Log out</div>
     </div>
     <div class="main-content">
-        <h1>Tim yang ada saat ini</h1>
-        <div class="tim">
-            <p>TIM PPI</p>
-            <form action="/action_page.php">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> Update Pola Kuman</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Hapus Pola Kuman</label><br>
-                <input id="submit" type="submit" value="Simpan">
-              </form>
-            <p>TIM PPRA</p>
-            <form action="/action_page.php">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> Update Pola Kuman</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Hapus Pola Kuman</label><br>
-                <input id="submit" type="submit" value="Simpan">
-              </form>
+        <h1>Pola Kuman Tahun Ini</h1>
+        <div class="file-upload">
+            <label for="file">Unggah file data pola kuman:</label>
+            <input type="file" id="file" name="file" accept=".csv, .xlsx">
+            <button type="submit">Kirim File</button>
+        </div>
+        <div class="button-container">
+            <button class="button">Cari antibiotik berdasarkan bakteri</button>
+            <button class="button">Update pola kuman</button>
+            <button class="button">Hapus pola kuman</button>
         </div>
     </div>
 </body>

@@ -1,3 +1,11 @@
+body {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.menu-item.active:hover,
 .menu-item.active {
     color: #ffffff;
     background-color: #008080;
