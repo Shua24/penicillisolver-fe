@@ -17,6 +17,12 @@ body {
     margin-bottom: 10px;
 }
 
+.menu-item.active:hover,
+.menu-item.active {
+    color: #ffffff;
+    background-color: #008080;
+}
+
 .user-box img {
     width: 40px;
     height: 40px;
@@ -43,16 +49,22 @@ h1 {
     margin-bottom: 20px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: space-between;
+.user-info {
+    gap: 20px;
 }
 
-.button {
-    background-color: #e0e0e0;
-    border: none;
-    padding: 10px 20px;
+#role {
+    margin-top: 5px;
+}
+
+form {
+    padding: 5px;
+}
+
+#submit{
+    margin-top: 8px;
+    background-color: #005F76;
+    color: white;
     border-radius: 5px;
-    cursor: pointer;
-    color: #005F76;
+    width: 80px;
 }
