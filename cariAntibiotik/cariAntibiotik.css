@@ -41,7 +41,7 @@ table, th, td {
     padding: 20px;
 }
 
-h1, p, label {
+h1, p, label, h3 {
     font-family: poppins;
     color: #005f76;
     padding-right: 40px;
