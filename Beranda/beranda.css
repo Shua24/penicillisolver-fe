@@ -22,3 +22,8 @@ h1 {
     margin: 50px 0;
     font-size: 38px;
 }
+
+.remind {
+    color: green;
+    font-weight: bold;
+}
