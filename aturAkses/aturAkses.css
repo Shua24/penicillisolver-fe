@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    user-select: none;
 }
 
 .logo-divider {
@@ -36,7 +37,7 @@ body {
 }
 
 .main-content {
-    margin-left: 250px;
+    margin-left: 280px;
     padding: 20px;
 }
 
@@ -51,10 +52,6 @@ h1 {
 
 .user-info {
     gap: 20px;
-}
-
-#role {
-    margin-top: 5px;
 }
 
 form {

@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    user-select: none;
 }
 
 .menu-item.active:hover,
@@ -12,14 +13,14 @@ body {
 }
 
 .main-content {
-    margin-left: 300px;
+    margin-left: 280px;
     padding: 20px;
 }
 
 h1 {
     color: #005F76;
     text-align: left;
-    margin: 50px 0;
+    margin: 50px 0 -10px;
     font-size: 38px;
 }
 

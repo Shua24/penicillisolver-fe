@@ -4,6 +4,7 @@ body, html {
     font-family: Poppins;
     height: 100vh;
     overflow: hidden;
+    user-select: none;
 }
 
 .menu-item.active:hover,
@@ -37,7 +38,7 @@ table, th, td {
 }
 
 .center {
-    margin-left: 300px;
+    margin-left: 280px;
     padding: 20px;
 }
 
