@@ -4,6 +4,7 @@ body, html {
     font-family: Poppins;
     height: 100vh;
     overflow: hidden;
+    user-select: none;
 }
 
 .container {
@@ -18,12 +19,15 @@ body, html {
 }
 
 .background img {
+    pointer-events: none;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .form {
+    transform-origin: top right;
+    transform: scale(0.9);
     position: absolute;
     right: 0;
     width: 400px;
@@ -37,6 +41,7 @@ body, html {
 }
 
 .logo img {
+    pointer-events: none;
     width: 150px;
     display: block;
     margin: 0 auto 10px;
@@ -124,13 +129,22 @@ button[type="submit"]:not(.login) {
     margin-left: 5px;
 }
 
-.lanjutkan {
+.lanjut{
     text-align: center;
     font-size: small;
 }
 
-.lanjutkan img {
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.icon img {
+    pointer-events: none;
     width: 40px;
     height: 40px;
-    padding: 10px;
+    padding: 5px;
+    border-radius: 20%;
 }
