@@ -67,10 +67,6 @@ button {
     color: #005f76;
 }
 
-.sick {
-    padding: 30px;
-}
-
 button:hover {
     background-color: #005f76;
     color: white;
