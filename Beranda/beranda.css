@@ -28,3 +28,7 @@ h1 {
     color: green;
     font-weight: bold;
 }
+
+.clickable-image {
+    cursor: pointer;
+}
