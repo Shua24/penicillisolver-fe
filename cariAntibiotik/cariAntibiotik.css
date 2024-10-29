@@ -5,6 +5,7 @@ body, html {
     height: 100vh;
     overflow: hidden;
     user-select: none;
+    background-color:#dfdfdf
 }
 
 .menu-item.active:hover,
@@ -13,37 +14,12 @@ body, html {
     background-color: #008080;
 }
 
-input[type=submit] {
-    font-family: Poppins;
-    border-radius: 5px;
-    background-color: white;
-    color: #00a99d;
-    font-size: 20px;
-}
-
-body {
-    background-color:#dfdfdf
-}
-
-input[type=text] {
-    font-family: poppins;
-}
-
-table, th, td {
-    font-family: poppins;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 0 10px;
-    background-color: white;
-}
-
 .center {
     margin-left: 280px;
     padding: 20px;
 }
 
 h1, p, label, h3 {
-    font-family: poppins;
     color: #005f76;
     padding-right: 40px;
     font-size: 20px;
@@ -54,16 +30,25 @@ h1 {
     margin-top: 50px;
 }
 
+button,
+input[type=submit] {
+    font-family: Poppins;
+    border-radius: 5px;
+    background-color: white;
+    color: #00a99d;
+    font-size: 20px;
+}
+
 input[type=text] {
+    font-family: poppins;
     padding: 15px;
     width: 200px;
+    float: right;
 }
 
 button {
-    font-family: poppins;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
+    margin-top: 30px;
+    padding: 10px 30px;
     color: #005f76;
 }
 
@@ -72,10 +57,18 @@ button:hover {
     color: white;
 }
 
+table {
+    width: 420px;
+    border-collapse: collapse;
+    background-color: inherit;
+}
+
 table, th, td {
     border: 1px solid rgb(199, 198, 198);
-    border-collapse: collapse;
     user-select: text;
-    background-color: inherit;
-    padding: 0 10px 10px 10px;
+    padding: 20px;
+}
+
+table p {
+    margin-top: -5px;
 }
