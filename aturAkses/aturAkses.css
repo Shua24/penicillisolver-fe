@@ -6,34 +6,10 @@ body {
     user-select: none;
 }
 
-.logo-divider {
-    border-bottom: 1px solid white;
-    margin-bottom: 20px;
-}
-
-.user-box {
-    background-color: #D9D9D9;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
 .menu-item.active:hover,
 .menu-item.active {
     color: #ffffff;
     background-color: #008080;
-}
-
-.user-box img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.role-info {
-    margin-top: 10px;
 }
 
 .main-content {
@@ -43,11 +19,18 @@ body {
 
 h1 {
     color: #005F76;
-    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
 }
 
-.file-upload {
-    margin-bottom: 20px;
+p {
+    font-size: 24px;
+}
+
+label{
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
 .user-info {
@@ -55,13 +38,27 @@ h1 {
 }
 
 form {
-    padding: 5px;
+    padding: 25px;
+    background-color: #D9D9D9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 300px;
 }
 
-#submit{
+#submit {
     margin-top: 8px;
     background-color: #005F76;
     color: white;
     border-radius: 5px;
-    width: 80px;
+    width: 100px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #008080;
 }
