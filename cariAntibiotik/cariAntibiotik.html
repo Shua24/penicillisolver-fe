@@ -6,6 +6,7 @@
     <title>Cari Antibiotik</title>
     <link rel="stylesheet" href="../cariAntibiotik/cariAntibiotik.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
+    <script src="result.js" defer></script>
 </head>
 <body>
     <div class="sidebar">
@@ -26,7 +27,7 @@
         <h1>Cari Antibiotik</h1>
         <h3>Pilih pencarian (isi salah satu)</h3><br>
         <div id="navbar"></div>
-        <form action="#">
+        <form onsubmit="handleSubmit(event)">
             <table border="1">
                 <tr>
                     <td>
@@ -49,6 +50,7 @@
                 </tr>
             </table>
         </form>
+        <div class="results" id="results"></div>
     </div>
 </body>
 </html>
