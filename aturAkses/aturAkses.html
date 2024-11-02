@@ -26,22 +26,23 @@
         <h1>Atur Akses Tim yang Tersedia</h1>
         <div class="tim">
             <p>TIM PPI</p>
-            <form action="">
-                <input type="checkbox" id="update" name="update" value="update">
-                <label for="update"> Update Pola Kuman</label><br>
-                <input type="checkbox" id="hapus" name="hapus" value="hapus">
-                <label for="hapus"> Hapus Pola Kuman</label><br>
-                <input id="submit" type="submit" value="Simpan">
+            <form onsubmit="return simpanData('PPI')">
+                <input type="checkbox" id="updatePPI" name="updatePPI">
+                <label for="updatePPI"> Update Pola Kuman</label><br>
+                <input type="checkbox" id="hapusPPI" name="hapusPPI">
+                <label for="hapusPPI"> Hapus Pola Kuman</label><br>
+                <input id="submitPPI" type="submit" value="Simpan">
               </form><br>
             <p>TIM PPRA</p>
-            <form action="">
-                <input type="checkbox" id="update" name="update" value="update">
-                <label for="update"> Update Pola Kuman</label><br>
-                <input type="checkbox" id="hapus" name="hapus" value="hapus">
-                <label for="hapus"> Hapus Pola Kuman</label><br>
-                <input id="submit" type="submit" value="Simpan">
+            <form onsubmit="return simpanData('PPRA')">
+                <input type="checkbox" id="updatePPRA" name="updatePPRA">
+                <label for="updatePPRA"> Update Pola Kuman</label><br>
+                <input type="checkbox" id="hapusPPRA" name="hapusPPRA" >
+                <label for="hapusPPRA"> Hapus Pola Kuman</label><br>
+                <input id="submitPPRA" type="submit" value="Simpan">
               </form>
         </div>
     </div>
+    <script src="aturAkses.js"></script>
 </body>
 </html>
