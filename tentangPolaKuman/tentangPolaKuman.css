@@ -36,3 +36,22 @@ p {
 ol {
     margin: -30px 0 20px 20px;
 }
+
+#load-content {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #008080;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#load-content:hover {
+    background-color: #005f5f;
+}
+
+#load-content:active {
+    background-color: #004747;
+}
