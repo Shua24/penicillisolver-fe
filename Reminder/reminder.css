@@ -65,8 +65,9 @@ form {
 }
 
 .tanggal{
-    color: #008080;
+    color: green;
     font-size: 20px;
+    font-weight: bold;
 }
 .Ubah{
     text-align: center;
