@@ -6,6 +6,46 @@
     <title>Reminder</title>
     <link rel="stylesheet" href="../reminder/reminder.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
+    <script>
+        function updateDeadline(day) {
+            const month = "Oktober";
+            const year = 2024;
+            const newDate = `${day} ${month} ${year}`;
+            // Mengubah teks label dengan ID "update"
+            document.getElementById("update").innerText = newDate;
+            // Menyimpan tanggal baru ke Local Storage
+            localStorage.setItem("reminderDate", newDate);
+        }
+
+        // Mengambil tanggal dari Local Storage saat halaman dimuat
+        function loadReminderDate() {
+            const savedDate = localStorage.getItem("reminderDate");
+            if (savedDate) {
+                document.getElementById("update").innerText = savedDate;
+            }
+        }
+
+        // Menambahkan event listener ke tombol kalender setelah DOM siap
+        document.addEventListener("DOMContentLoaded", function() {
+            // Memuat tanggal yang disimpan
+            loadReminderDate();
+
+            const calendarButtons = document.querySelectorAll(".calendar-item");
+            calendarButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const day = button.innerText; // Ambil teks dari tombol yang diklik
+                    updateDeadline(day); // Panggil fungsi untuk mengupdate tanggal
+                });
+            });
+
+            // Menambahkan event listener untuk tombol Ganti Tenggat
+            document.querySelector(".Ganti").addEventListener("click", function() {
+                const currentDate = document.getElementById("update").innerText;
+                localStorage.setItem("reminderDate", currentDate);
+                alert("Tanggal telah disimpan: " + currentDate); // Notifikasi bahwa tanggal sudah disimpan
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container"></div>
@@ -26,7 +66,7 @@
         <h1>Reminder Pergantian Pola Kuman</h1>
         <div class="tim">
             <p>Deadline</p>
-            <label for="update" class="tanggal"> 19 Oktober 2024 </label><br>
+            <label id="update" class="tanggal">19 Oktober 2024</label><br>
                 
             <p class="Ubah"> Ubah Deadline</p><br>
               <table>
