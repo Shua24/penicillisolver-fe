@@ -1,15 +1,3 @@
-let selectedRole = ''; // Variabel buat nyimpen role
-
-function selectRole(role) {
-    selectedRole = role; // nyimpen role yg dipilih
-    // Anda bisa menambahkan logika visual untuk menandai tombol yang dipilih, misalnya:
-    const buttons = document.querySelectorAll('.role-selection button');
-    buttons.forEach(button => {
-        button.classList.remove('selected'); // Hapus kelas 'selected' dari semua tombol
-    });
-    event.target.classList.add('selected'); // Tambahkan kelas 'selected' pada tombol yang dipilih
-}
-
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault(); // biar gk reload
 
@@ -26,13 +14,36 @@ document.querySelector("form").addEventListener("submit", function(event) {
         return; // stop klo misalkan salah
     }
     if (!selectedRole) {
-        alert("Silakan pilih salah satu peran!");
-        return; // Hentikan proses jika tidak ada role yang dipilih
+        alert("Silakan pilih salah satu role");
+        return; 
+    }
+    let users = JSON.parse(localStorage.getItem("userData")) || [];
+    if (!Array.isArray(users)) {
+        users = []; // klo bukan array, reset menjadi array kosong
+    }
+
+    const emailExists = users.some(user => user.email === email);
+    if (emailExists) {
+        alert("Email sudah terdaftar!");
+        return; // muncul pesan klo misalkan email udh didaftarin
     }
     // buat nyimpen data user sementara
-    const userData = { nama, email, sip, password };
-    localStorage.setItem("userData", JSON.stringify(userData));
+    const userData = { nama, email, sip, password, role: selectedRole };
+    users.push(userData);
+    localStorage.setItem("userData", JSON.stringify(users));
 
     // ke login.html
     window.location.href = "../Login/login.html";
 });
+
+let selectedRole = ''; // Variabel buat nyimpen role
+
+function selectRole(role) {
+    selectedRole = role; // nyimpen role yg dipilih
+    // Anda bisa menambahkan logika visual untuk menandai tombol yang dipilih, misalnya:
+    const buttons = document.querySelectorAll('.role-selection button');
+    buttons.forEach(button => {
+        button.classList.remove('selected'); // Hapus kelas 'selected' dari semua tombol
+    });
+    event.target.classList.add('selected'); // Tambahkan kelas 'selected' pada tombol yang dipilih
+}

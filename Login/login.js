@@ -6,16 +6,17 @@ document.querySelector("form").addEventListener("submit", function(event) {
     const passwordInput = document.getElementById("password").value;
 
     // ngambil data user di localStorage
-    const userData = JSON.parse(localStorage.getItem("userData"));
+    const users = JSON.parse(localStorage.getItem("userData")) || [];
 
-    // buat nyari data user yang udah terdaftar
-    if (!userData || userData.email !== emailInput) {
+    // buat nyari data pengguna yg udh terdaftar
+    const user = users.find(user => user.email === emailInput);
+
+    if (!user) {
         alert("User belum terdaftar!");
-    } else if (userData.password !== passwordInput) {
+    } else if (user.password !== passwordInput) {
         alert("Kata sandi salah!");
     } else {
         alert("Login berhasil!");
-       
         window.location.href = "../Beranda/beranda.html";
     }
 });
