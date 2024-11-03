@@ -47,6 +47,7 @@ form {
 }
 
 #submitPPI {
+    font-family: "Poppins";
     margin-top: 8px;
     background-color: #005F76;
     color: white;
@@ -64,6 +65,7 @@ form {
 }
 
 #submitPPRA {
+    font-family: "Poppins";
     margin-top: 8px;
     background-color: #005F76;
     color: white;
