@@ -40,10 +40,10 @@ let selectedRole = ''; // Variabel buat nyimpen role
 
 function selectRole(role) {
     selectedRole = role; // nyimpen role yg dipilih
-    // Anda bisa menambahkan logika visual untuk menandai tombol yang dipilih, misalnya:
+    
     const buttons = document.querySelectorAll('.role-selection button');
     buttons.forEach(button => {
-        button.classList.remove('selected'); // Hapus kelas 'selected' dari semua tombol
+        button.classList.remove('selected'); 
     });
-    event.target.classList.add('selected'); // Tambahkan kelas 'selected' pada tombol yang dipilih
+    event.target.classList.add('selected'); 
 }

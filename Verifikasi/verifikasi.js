@@ -1,4 +1,27 @@
+let generatedOTP = "";
+
+function generateOTP() {
+    return Math.floor(1000 + Math.random() * 9000).toString(); 
+}
+
+function showNotification(title, message) {
+    if (Notification.permission === "granted") {
+        new Notification(title, { body: message });
+    } else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(permission => {
+            if (permission === "granted") {
+                new Notification(title, { body: message });
+            }
+        });
+    }
+}
+
 window.onload = function () {
+    generatedOTP = generateOTP();
+    console.log("Generated OTP:", generatedOTP); 
+
+    showNotification("Jgn kasih tau siapa-siapa ya..., ini kode OTP nya :", generatedOTP);
+
     const inputs = document.querySelectorAll(".code-input");
 
     inputs.forEach((input, index) => {
@@ -34,17 +57,20 @@ function verifikasi() {
 
     const otp = code1 + code2 + code3 + code4;
 
-    if (otp === "1234") {
-        document.getElementById("pesan").innerText = "Kode OTP Terverifikasi!";
-        document.getElementById("pesan").style.color = "#008080";
+    if (otp === generatedOTP) {  
+        const message = "Kode OTP Terverifikasi!";
+        document.getElementById("pesan").innerText = message;
+        document.getElementById("pesan").style.color = "blue";
         setTimeout(function() {
-            window.location.href = '../Beranda/beranda.html';
+            window.location.href = '../Beranda/beranda.html'; 
         }, 2000);
     } else if (otp === "") {
-        document.getElementById("pesan").innerText = "Kode OTP Kosong!";
+        const message = "Kode OTP Kosong!";
+        document.getElementById("pesan").innerText = message;
         document.getElementById("pesan").style.color = "red";
     } else {
-        document.getElementById("pesan").innerText = "Kode OTP Salah!";
+        const message = "Kode OTP Salah!";
+        document.getElementById("pesan").innerText = message;
         document.getElementById("pesan").style.color = "red";
         clearInputs();
     }

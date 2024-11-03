@@ -4,7 +4,7 @@ body, html {
     font-family: Poppins;
     height: 100vh;
     background-color:#008080;
-    overflow: hidden;
+    overflow: auto;
     user-select: none;
 }
 
