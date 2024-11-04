@@ -28,13 +28,19 @@ h2 {
     margin: 20px 0;
 }
 
-p {
-    text-align: left;
-    margin-bottom: 50px;
+ol {
+    margin-left: 20px;
 }
 
-ol {
-    margin: -30px 0 20px 20px;
+.inline{
+    display: flex;
+    align-items: center;
+}
+
+.textlink{
+    margin-left: 10px; 
+    cursor: pointer; 
+    color: #008080;
 }
 
 #load-content {
